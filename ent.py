@@ -374,17 +374,17 @@ def makeEvolutionRandom(G_init, sorted_AllPair_P_uv, alpha, beta, thresh=0.5):
 
 def getMatrix(args):
 	if args.corr == 'correlation':
-	    fname1 = "Dump/corr/mean_AD_correlation_matrix.pkl"
-	    fname2 = "Dump/corr/mean_MCI_correlation_matrix.pkl"
-	    fname3 = "Dump/corr/mean_NC_correlation_matrix.pkl"
+	    fname1 = "mean_AD_correlation_matrix.pkl"
+	    fname2 = "mean_MCI_correlation_matrix.pkl"
+	    fname3 = "mean_NC_correlation_matrix.pkl"
 	elif args.corr == 'partial correlation':
-	    fname1 = "Dump/partCorr/mean_AD_part_correlation_matrix.pkl"
-	    fname2 = "Dump/partCorr/mean_MCI_part_correlation_matrix.pkl"
-	    fname3 = "Dump/partCorr/mean_NC_part_correlation_matrix.pkl"
+	    fname1 = "mean_AD_part_correlation_matrix.pkl"
+	    fname2 = "mean_MCI_part_correlation_matrix.pkl"
+	    fname3 = "mean_NC_part_correlation_matrix.pkl"
 	elif args.corr == 'tangent':
-	    fname1 = "Dump/tangent/mean_AD_tangent_matrix.pkl"
-	    fname2 = "Dump/tangent/mean_MCI_tangent_matrix.pkl"
-	    fname3 = "Dump/tangent/mean_NC_tangent_matrix.pkl"
+	    fname1 = "mean_AD_tangent_matrix.pkl"
+	    fname2 = "mean_MCI_tangent_matrix.pkl"
+	    fname3 = "mean_NC_tangent_matrix.pkl"
 	mean_AD_correlation_matrix = pickle.load(open(fname1, 'rb'))
 	mean_MCI_correlation_matrix = pickle.load(open(fname2,'rb'))
 	mean_NC_correlation_matrix = pickle.load(open(fname3,'rb'))
